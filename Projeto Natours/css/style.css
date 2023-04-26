@@ -1,0 +1,73 @@
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* A borda faz parte do tamanho expecificado para o elemento */
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400; /* Fonte em negrito com peso 400 */
+    font-size: 16px;
+    line-height: 1.7; /* Espaçamento entre as linhas */
+    color: #777;
+    padding: 30px;
+}
+
+.header {
+    height: 95vh;
+    background-image: linear-gradient(
+        to right bottom, 
+        rgba(126, 213, 111, 0.8), 
+        hsla(160, 64%, 43%, 0.8)),  
+        url(../img/hero.jpg);
+    background-size: cover; /* Faz com que a imagem preencha todo o container mantendo a proporção */
+    background-position: top; /* Faz com que a imagem fique sempre colada no topo, e diminua a parte de baixo para manter a proporção de acordo com o tamanho do navegador */
+    position: relative; /* Para indicar que o top e o left do logo-box tem como referencia esse container */
+
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); /* Ferramenta CSS para ajustar um container, podendo desenha-lo e mudar sua forma geometrica */
+}
+
+.logo-box {
+    position: absolute; 
+    top: 40px;
+    left: 40px;
+}
+
+.logo {
+    height: 35px;
+}
+
+.text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.heading-primary-main {
+    display: block; /* Blocos ocupam toda a largura disponivel, isso faz com que a outra linha vá para baixo */
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 17.4px;
+}
