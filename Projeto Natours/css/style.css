@@ -11,10 +11,13 @@ Dark green: #28b485
     Converter px para rem (Unidade escalavel)
 */
 html {
-    font-size: 10px;
+    /*font-size: 10px;*/
+    font-size: 62.5%;
 }
 
-* {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* A borda faz parte do tamanho expecificado para o elemento */
