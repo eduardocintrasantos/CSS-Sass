@@ -51,11 +51,13 @@ body {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .heading-primary {
     color: #fff;
     text-transform: uppercase;
+    margin-bottom: 60px;
 
     /*backface-visibility: hidden;  Utilizado para quando a animação tem um pequeno tremor no final */
 }
@@ -113,4 +115,32 @@ body {
         opacity: 1;
         transform: translate(0);
     }
+}
+
+/* BOTÃO */
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block; /* block pegaria toda a largura, o inline mantem ajustado, e permitindo informar o tamanho*/
+    width: 300px; /* É possivel ajustar a largura por conta do inline-block */
+    border-radius: 35px;
+    transition: all .2s; /* Tempo de transição para a animação do botão */
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
 }
