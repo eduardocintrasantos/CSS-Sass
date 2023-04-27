@@ -7,6 +7,13 @@ Dark green: #28b485
 
 */
 
+/*
+    Converter px para rem (Unidade escalavel)
+*/
+html {
+    font-size: 10px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,10 +23,10 @@ Dark green: #28b485
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400; /* Fonte em negrito com peso 400 */
-    font-size: 16px;
+    /*font-size: 16px;*/
     line-height: 1.7; /* Espaçamento entre as linhas */
     color: #777;
-    padding: 30px;
+    padding: 3rem;
 }
 
 .header {
@@ -38,12 +45,12 @@ body {
 
 .logo-box {
     position: absolute; 
-    top: 40px;
-    left: 40px;
+    top: 4rem;
+    left: 4rem;
 }
 
 .logo {
-    height: 35px;
+    height: 3.5rem;
 }
 
 .text-box {
@@ -57,16 +64,16 @@ body {
 .heading-primary {
     color: #fff;
     text-transform: uppercase;
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
 
     /*backface-visibility: hidden;  Utilizado para quando a animação tem um pequeno tremor no final */
 }
 
 .heading-primary-main {
     display: block; /* Blocos ocupam toda a largura disponivel, isso faz com que a outra linha vá para baixo */
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 35px;
+    letter-spacing: 3.5rem;
 
     animation-name: moveInLeft;
     animation-duration: 2s;
@@ -80,9 +87,9 @@ body {
 
 .heading-primary-sub {
     display: block;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 17.4px;
+    letter-spacing: 1.75rem;
 
     animation-name: moveInRight;
     animation-duration: 2s;
@@ -92,10 +99,10 @@ body {
 @keyframes moveInLeft {
     0% {
         opacity: 0;
-        transform: translateX(-100px);
+        transform: translateX(-10rem);
     }
     80% {
-        transform: translateX(20px);
+        transform: translateX(2rem);
     }
     100% {
         opacity: 1;
@@ -106,10 +113,10 @@ body {
 @keyframes moveInRight {
     0% {
         opacity: 0;
-        transform: translateX(100px);
+        transform: translateX(10rem);
     }
     80% {
-        transform: translateX(-20px);
+        transform: translateX(-2rem);
     }
     100% {
         opacity: 1;
@@ -120,7 +127,7 @@ body {
 @keyframes moveInBottom {
     0% {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(3rem);
     }
     100% {
         opacity: 1;
@@ -134,22 +141,23 @@ body {
 .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 15px 40px;
+    padding: 1.5rem 4rem;
     display: inline-block; /* block pegaria toda a largura, o inline mantem ajustado, e permitindo informar o tamanho*/
-    width: 300px; /* É possivel ajustar a largura por conta do inline-block */
-    border-radius: 35px;
+    width: 30rem; /* É possivel ajustar a largura por conta do inline-block */
+    border-radius: 3.5rem;
     /*transition: all .2s;  Tempo de transição para a animação do botão */
     position: relative;
+    font-size: 1.6rem;
 }
 
 .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
 }
 
 .btn:active {
     transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
 }
 
 .btn-white {
@@ -163,7 +171,7 @@ body {
     display: inline-block;
     height: 100%;
     width: 100%;
-    border-radius: 100px;
+    border-radius: 10rem;
     position: absolute;
     top: 0;
     left: 0;
